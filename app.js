@@ -12,30 +12,6 @@ var config = require('config');
 var indexRouter = require(__dirname + '/routes/index');
 var fs = require('fs');
 var jwt = require('jsonwebtoken');
-var crypto = require('crypto');
-var nodeMailer = require('nodemailer');
-    var transporter = nodeMailer.createTransport({
-       service:"Gmail",
-        auth:{
-            user:'toanpro7x@gmail.com',
-            pass:'lncbhenspsdlgous'
-        }
-    });
-
-    var Conten1 = {
-        from: '"Toanpro"<toandq999@gmail.com>', // sender address
-        to: 'toandq999@gmail.com', // list of receivers
-        subject: 'Hello', // Subject line
-        text: 'Hello world?', // plain text body
-        html: '<b>Hello world</b>' // html body
-    };
-    transporter.sendMail(Conten1, (error, info) => {
-        if (error) {
-            return console.log(error);
-        }else{
-            console.log('tin nhan da gui');
-        }
-    });
 
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended:true}));
