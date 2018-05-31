@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang dang nhap</title>
+</head>
+<body>
+<form method="post">
+    <p style="red">{% if Loi %}{{ Loi }}{% endif %}</p>
+    Username: <input type="text" placeholder="username" name="user">
+    Password:<input type="password" name="pass">
+    <input type="submit" value="LOGIN" >
+    <br>
+    <a href="/register">Register</a>
+    <a href="/forgot">Forgot Password</a>
+</form>
+</body>
+</html>
