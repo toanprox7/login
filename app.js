@@ -29,7 +29,7 @@ nunjucks.configure('views',{
 app.set('views', __dirname + '/views');
 app.set('view engine', 'html');
 
-app.listen(process.env.PORT || config.get('server.port'), function () {
-   console.log("server running on port", config.get('server.port'));
+app.listen(process.env.PORT || 3000, function () {
+   console.log("server running on port", process.env.PORT);
 });
 
